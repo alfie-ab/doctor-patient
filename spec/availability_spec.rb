@@ -1,5 +1,7 @@
 require 'availability'
 
-describe "" do
+
+
+describe "Checking times" do
 
 end
