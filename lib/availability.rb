@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'time'
-require 'times'
+require_relative 'times'
 
 #This refers exclusively to the command line input
 input = ARGV[0].to_i
@@ -15,12 +14,9 @@ def check_times(input)
   elsif input > 15
     puts "You must book before 15:00"
   else
-    puts "You booking has been confirmed"
+    times = Times.new.parsing_file
   end
+  puts times
 end
 
-
-#Takes user input and checks it against available times
-def check_availability
-  get_times
-end
+check_times(input)
