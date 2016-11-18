@@ -17,7 +17,7 @@ times["availability_slots"].each do |a|
 end
 
 
-if input < 8
+if input < 8 
   puts "You must book after 08:00"
 elsif input > 15
   puts "You must book before 15:00"

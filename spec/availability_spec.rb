@@ -1,5 +1,5 @@
 require 'availability'
 
-describe "Command line input" do
+describe "" do
 
 end
