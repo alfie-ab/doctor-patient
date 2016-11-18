@@ -24,7 +24,7 @@ describe Times do
 
   it "returns an array of the available times" do
     subject.get_times(testHash)
-    expect(subject.output).to eq(["08:00:00", "08:00:00", "08:10:00"])
+    expect(subject.instance_variable_get(:@output)).to eq(["08:00:00", "08:00:00", "08:10:00"])
   end
 
 end
